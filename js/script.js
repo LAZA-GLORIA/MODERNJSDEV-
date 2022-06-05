@@ -1,7 +1,7 @@
 import { addToCart, totalPrice as tp, tq } from "./shoppingCart.js";
 
 console.log('importing module');
-addToCart('pain', 4);
+addToCart('breds', 4);
 
 console.log(tp, tq);
 
@@ -50,3 +50,10 @@ const shoppingCart2 = (function () {
 shoppingCart2.addToCart('apples', 4);
 shoppingCart2.addToCart('pizza', 1);
 
+//COMMONJS export
+//export.addToCart = function(product, quantity) {
+  //  cart.push({product, quantity});
+ //   console.log(`${quantity} ${product} added to cart shipping cost is ${shippingCost}`);
+//};
+//import
+//const { addToCart } = require('./shoppingCart.js');
